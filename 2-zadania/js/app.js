@@ -4,7 +4,7 @@ const spaceShip = {
     flyDistance: 0,
     flyTo(place, distance){
       this.currentLocation = place;
-      this.flyDistance =+ distance;
+      this.flyDistance += distance;
     },
     showInfo(){
       console.log("Informacje o statku:\n--------------------\nStatek " + this.name);
