@@ -24,8 +24,10 @@ const spaceShip = {
   }
 }
 
+spaceShip.flyTo("Mars", 3);
+
 function skrypt(){
     spaceShip.showInfo();
+    console.log("\nStatek " + spaceShip.name + " pokonał dystans " + spaceShip.flyDistance);
     spaceShip.meetClingon();
-  }
-  
+}
