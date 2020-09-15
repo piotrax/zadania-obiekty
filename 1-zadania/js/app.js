@@ -25,12 +25,28 @@ const currentUser = {
   }
 }
 
+const book = {
+  title: "W pustyni i w puszczy",
+  author: "Henryk Sienkiewicz",
+  pageCount: 345,
+  publisher: "Wydawnictwo Edytor",
+  showDetails: function(){
+    for(let prop in book){
+      propValue = book[prop]
+      console.log(prop + ": " + propValue);
+    }
+  }
+}
+
+Object.defineProperty(book, 'showDetails', { enumerable: false });
+
 function skrypt(){
   document.getElementById("prod1").textContent = prod1.name;
   document.getElementById("prod2").textContent = prod2.name;
   document.getElementById("suma").textContent = prod1.price + prod2.price;
   document.getElementById("waga").textContent = (prod1.weight + prod2.weight).toFixed(1)
   currentUser.show();
+  book.showDetails();
 }
 
 
