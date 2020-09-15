@@ -30,7 +30,7 @@ const book = {
   author: "Henryk Sienkiewicz",
   pageCount: 345,
   publisher: "Wydawnictwo Edytor",
-  showDetails: function(){
+  showDetails() {
     for(let prop in book){
       propValue = book[prop]
       console.log(prop + ": " + propValue);
