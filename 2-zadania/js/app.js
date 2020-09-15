@@ -17,7 +17,6 @@ const spaceShip = {
         }
         if (x>50){
           console.log("Statek " + this.name + " będący w okolicy " + this.currentLocation + " zwycięsko wyszedł ze spotkania z Klingonami")
-
         } 
         else {
           console.log("Statek " + this.name + " będący w okolicy " + this.currentLocation + " został pokonany przez Klingonów")
