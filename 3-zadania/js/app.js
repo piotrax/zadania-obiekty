@@ -38,7 +38,7 @@ function skrypt(){
  book.addUser("Beata", 33, "87688576575");
  book.addUser("Cezary", 53, "33987587457");                 
  book.showUsers();
- book.findByName("Piotr");
+ book.findByName("Dawid");
  book.findByPhone("0872328732987");
  book.getCount();
 }
